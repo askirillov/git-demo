@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI girl animated video</title>
+  <desc id="desc">A looping stylized animation of an adult AI woman with holographic neural-network effects.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#163a85"/>
+      <stop offset="45%" stop-color="#090f2b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="hairGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#62e5ff"/>
+      <stop offset="45%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#ff5ec4"/>
+    </linearGradient>
+    <linearGradient id="skinGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe4f5"/>
+      <stop offset="100%" stop-color="#f0b7d9"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .line { stroke: #36d7ff; stroke-width: 2; opacity: .45; }
+      .node { fill: #8ff7ff; opacity: .9; filter: url(#softGlow); }
+      .circuit { fill: none; stroke: #63f3ff; stroke-width: 3; stroke-linecap: round; opacity: .75; }
+      .subtitle { font: 600 34px 'Inter', 'Segoe UI', Arial, sans-serif; fill: #eaf9ff; letter-spacing: 3px; }
+      .small { font: 500 18px 'Inter', 'Segoe UI', Arial, sans-serif; fill: #aeefff; letter-spacing: 4px; }
+      #halo { transform-origin: 640px 360px; animation: rotate 14s linear infinite; }
+      #net { animation: drift 8s ease-in-out infinite alternate; }
+      #hair { transform-origin: 640px 300px; animation: hairWave 4s ease-in-out infinite; }
+      #face { animation: breathe 3.2s ease-in-out infinite; transform-origin: 640px 390px; }
+      #eyesOpen { animation: blink 5s infinite; transform-origin: center; }
+      #eyesClosed { animation: blinkClosed 5s infinite; transform-origin: center; opacity: 0; }
+      #visor { animation: scan 2.8s ease-in-out infinite; }
+      #glitchText { animation: textPulse 2.4s ease-in-out infinite; }
+      #particles circle { animation: particleFloat 6s ease-in-out infinite alternate; }
+      #particles circle:nth-child(2n) { animation-duration: 7.5s; }
+      #particles circle:nth-child(3n) { animation-duration: 5.5s; }
+      @keyframes rotate { to { transform: rotate(360deg); } }
+      @keyframes drift { from { transform: translate(-18px, 8px); } to { transform: translate(18px, -8px); } }
+      @keyframes hairWave { 0%,100% { transform: rotate(-1.5deg); } 50% { transform: rotate(1.5deg); } }
+      @keyframes breathe { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(6px) scale(1.012); } }
+      @keyframes blink { 0%, 91%, 100% { opacity: 1; } 94%, 96% { opacity: 0; } }
+      @keyframes blinkClosed { 0%, 91%, 100% { opacity: 0; } 94%, 96% { opacity: 1; } }
+      @keyframes scan { 0%,100% { transform: translateY(-42px); opacity: .2; } 50% { transform: translateY(42px); opacity: .95; } }
+      @keyframes textPulse { 0%,100% { opacity: .72; letter-spacing: 3px; } 50% { opacity: 1; letter-spacing: 7px; } }
+      @keyframes particleFloat { from { transform: translateY(0); opacity: .25; } to { transform: translateY(-34px); opacity: .95; } }
+    </style>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGlow)"/>
+  <rect width="1280" height="720" fill="#07111f" opacity=".3"/>
+
+  <g id="net">
+    <path class="line" d="M90 140 L210 92 L342 174 L470 118 L610 185 L760 96 L910 170 L1080 102 L1190 160"/>
+    <path class="line" d="M80 560 L245 490 L380 545 L540 462 L690 535 L842 448 L1000 530 L1190 455"/>
+    <path class="line" d="M160 300 L320 250 L465 325 L625 270 L805 340 L965 275 L1135 330"/>
+    <circle class="node" cx="90" cy="140" r="6"/><circle class="node" cx="210" cy="92" r="5"/>
+    <circle class="node" cx="342" cy="174" r="7"/><circle class="node" cx="470" cy="118" r="5"/>
+    <circle class="node" cx="610" cy="185" r="7"/><circle class="node" cx="760" cy="96" r="5"/>
+    <circle class="node" cx="910" cy="170" r="7"/><circle class="node" cx="1080" cy="102" r="5"/>
+    <circle class="node" cx="1190" cy="160" r="6"/><circle class="node" cx="245" cy="490" r="6"/>
+    <circle class="node" cx="540" cy="462" r="6"/><circle class="node" cx="842" cy="448" r="6"/>
+    <circle class="node" cx="1000" cy="530" r="6"/>
+  </g>
+
+  <g id="particles" fill="#99f6ff" filter="url(#softGlow)">
+    <circle cx="165" cy="220" r="3"/><circle cx="250" cy="650" r="4"/><circle cx="385" cy="72" r="3"/>
+    <circle cx="522" cy="615" r="4"/><circle cx="702" cy="76" r="3"/><circle cx="835" cy="630" r="4"/>
+    <circle cx="1045" cy="235" r="3"/><circle cx="1160" cy="620" r="4"/><circle cx="1112" cy="88" r="3"/>
+  </g>
+
+  <g id="halo" fill="none" stroke="#75f7ff" stroke-width="2" opacity=".5" filter="url(#strongGlow)">
+    <circle cx="640" cy="355" r="245" stroke-dasharray="18 22"/>
+    <circle cx="640" cy="355" r="190" stroke-dasharray="4 28"/>
+    <path d="M395 355 C470 245 565 195 640 195 C715 195 810 245 885 355 C810 465 715 515 640 515 C565 515 470 465 395 355Z"/>
+  </g>
+
+  <g id="avatar" filter="url(#softGlow)">
+    <path id="hair" d="M445 570 C390 435 420 235 560 175 C665 130 810 175 850 315 C888 452 802 590 710 623 C675 580 705 495 680 440 C650 495 585 540 510 575 C492 586 465 587 445 570Z" fill="url(#hairGradient)" opacity=".92"/>
+    <path d="M485 650 C520 545 585 510 640 510 C695 510 760 545 795 650Z" fill="#111b3d" stroke="#65eaff" stroke-width="4"/>
+    <path id="face" d="M514 330 C514 245 565 202 640 202 C715 202 766 245 766 330 C766 438 712 514 640 514 C568 514 514 438 514 330Z" fill="url(#skinGlow)"/>
+    <path d="M520 331 C555 248 590 224 640 224 C690 224 725 248 760 331" fill="none" stroke="#271b44" stroke-width="18" stroke-linecap="round" opacity=".72"/>
+    <g id="eyesOpen">
+      <ellipse cx="595" cy="355" rx="32" ry="15" fill="#0e1635"/>
+      <ellipse cx="685" cy="355" rx="32" ry="15" fill="#0e1635"/>
+      <circle cx="600" cy="354" r="8" fill="#7df9ff"/>
+      <circle cx="690" cy="354" r="8" fill="#7df9ff"/>
+    </g>
+    <g id="eyesClosed" stroke="#0e1635" stroke-width="8" stroke-linecap="round">
+      <path d="M565 356 Q595 368 625 356"/>
+      <path d="M655 356 Q685 368 715 356"/>
+    </g>
+    <path d="M625 402 Q640 412 655 402" stroke="#cc6fb4" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M606 445 Q640 468 674 445" stroke="#a21775" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <rect x="540" y="315" width="200" height="86" rx="26" fill="#061428" opacity=".38" stroke="#5df2ff" stroke-width="3"/>
+    <rect id="visor" x="548" y="349" width="184" height="14" rx="7" fill="#5df2ff" opacity=".7"/>
+    <path class="circuit" d="M498 385 L455 385 L455 338 L430 338"/>
+    <path class="circuit" d="M782 385 L825 385 L825 338 L850 338"/>
+    <path class="circuit" d="M640 190 L640 145 L598 145"/>
+    <circle class="node" cx="430" cy="338" r="7"/><circle class="node" cx="850" cy="338" r="7"/><circle class="node" cx="598" cy="145" r="6"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text id="glitchText" x="640" y="88" class="subtitle">AI GIRL // NEURAL DREAM</text>
+    <text x="640" y="672" class="small">LOOPING SVG VIDEO • HOLOGRAPHIC AVATAR • 1280×720</text>
+  </g>
+</svg>
