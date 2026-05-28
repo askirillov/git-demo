@@ -31,9 +31,10 @@ build_windows.bat
 После сборки появятся файлы:
 
 - `dist\HiddenFileFinder.exe` — portable EXE, который можно запускать без установки;
+- `dist\release\HiddenFileFinder-1.0.0-Windows-Portable.zip` — ZIP-релиз с готовым EXE и README;
 - `dist\installer\HiddenFileFinderSetup.exe` — установщик Windows, если установлен Inno Setup.
 
-Скрипт сборки использует `PyInstaller` из `requirements-build.txt` и файл `hidden_file_finder.spec`. Установщик описан в `installer/hidden_file_finder.iss`.
+Скрипт сборки использует `PyInstaller` из `requirements-build.txt`, файл `hidden_file_finder.spec` и `create_release_zip.py` для упаковки portable ZIP. Установщик описан в `installer/hidden_file_finder.iss`.
 
 ### Что умеет приложение
 
